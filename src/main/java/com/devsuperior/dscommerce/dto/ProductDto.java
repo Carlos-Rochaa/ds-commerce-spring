@@ -1,8 +1,12 @@
 package com.devsuperior.dscommerce.dto;
 
 import com.devsuperior.dscommerce.entities.Product;
+import lombok.Getter;
+import lombok.Setter;
 
 
+@Getter
+@Setter
 public class ProductDto {
     private Long id;
     private String name;
@@ -30,23 +34,5 @@ public class ProductDto {
         imgUrl = entity.getImgUrl();
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public String getImgUrl() {
-        return imgUrl;
-    }
 }
